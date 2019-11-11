@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Freelancer's Studyroom</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            
+            .container { position:relative; }
+            
+            .container video {
+                position: fixed;
+                min-width: 100%; 
+                min-height: 100%;
+                right: 0;
+                bottom: 0;
+                z-index:0;
+            }
+            .overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:1;
+                color : white;
+            }
+                            
+        </style>  
+
+    </head>
+
+
+    <body>
+        <div class="container">
+    <video autoplay muted loop id="video">
+        <source src="particle.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+        <p>Content above your video</p>
+        <form>
+            <p>Content Below Your Video</p>
+            <label for="input">Form Input Label</label>
+            <input id="input" name="input" value="" />
+            <button type="submit">Submit</button>
+        </form>
+        <div style="color:white">TODO write content</div>
+        
+        
+        
+    </div>              
+            
+</div>
+        
+        
+    </body>
+</html>
