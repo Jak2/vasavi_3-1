@@ -10,50 +10,48 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style>
-            
-            .container { position:relative; }
-            
-            .container video {
-                position: fixed;
-                min-width: 100%; 
-                min-height: 100%;
-                right: 0;
-                bottom: 0;
-                z-index:0;
-            }
-            .overlay {
-                position:absolute;
-                top:0;
-                left:0;
-                z-index:1;
-                color : white;
-            }
-                            
-        </style>  
-
+        <link rel="stylesheet" href="navbarcss.css">
     </head>
 
-
     <body>
-        <div class="container">
-    <video autoplay muted loop id="video">
-        <source src="particle.mp4" type="video/mp4" />
-    </video>
-    <div class="overlay">
-        <p>Content above your video</p>
-        <form>
-            <p>Content Below Your Video</p>
-            <label for="input">Form Input Label</label>
-            <input id="input" name="input" value="" />
-            <button type="submit">Submit</button>
-        </form>
-        <div style="color:white">TODO write content</div>
+    <div class="container">
         
+            <video autoplay muted loop id="video">
+                <source src="particle.mp4" type="video/mp4" />
+            </video>
         
-        
-    </div>              
+        <div class="overlay">
             
+            /* this is the part of the navigation bar */
+            <div class="header">
+                <div class="navbar">
+        
+                    <ul class="menubar">
+                        <li style="border:2px; border-color:2px; "><a href="index.html">Home</a></li>
+                        <li><a href="navbar.html">courses offered</a></li>
+                        <li>Freelancer room</li>
+                        <li>ideals and goals</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                    
+                </div>            
+            </div>
+            
+                 <p>Content above your video</p>
+            <form>
+                  <p>Content Below Your Video</p>
+                  <label for="input">Form Input Label</label>
+                  <input id="input" name="input" value="" />
+                  <button type="submit">Submit</button>
+            </form>
+                    <div style="color:white">TODO write content</div>
+        
+        
+        
+    </div>                    
 </div>
         
         

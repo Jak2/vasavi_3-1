@@ -1,0 +1,62 @@
+/*
+    To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Nov-2019, 13:46:29
+    Author     : Asterick
+*/
+
+
+            
+            .container { position:relative; }
+            
+            .container video {
+                position: fixed;
+                min-width: 100%; 
+                min-height: 100%;
+                right: 0;
+                bottom: 0;
+                z-index:0;
+            }
+
+            .overlay {
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:1;
+                color : white;
+            }
+            
+            .nav .menubar{
+                
+                width:  100%;
+                text-align: center;
+                box-shadow: 1px 2px 4px grey;
+                background: rgba(2,2,2.0.2);
+            }
+            
+            .menubar li{
+                
+                list-style-type:none;
+                display:inline-block;
+                padding:25px;
+                margin:0px 20px;
+                font-family: sans-serif;
+                cursor:pointer;
+                font-weight: bold;
+            }
+            .menubar a{
+              
+                text-decoration:none;
+                color:white;
+            }            
+            .menubar li:hover {
+                transition:all .5s ease;
+                background: #ff6000 ;
+                color: white;
+            }
+            
+
+
